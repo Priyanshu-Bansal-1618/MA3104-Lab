@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Caching Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .container {
+            background-color: white;
+            width: 70%;
+            margin: auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HTTP Caching Demonstration</h1>
+
+        <p>
+            This page is being served by a Python HTTP server.
+        </p>
+
+        <p>
+            This server uses ETag and Last-Modified headers
+            to reduce unnecessary data transfer.
+        </p>
+
+        <p>
+            If the page has not changed, the server can return
+            a 304 Not Modified response.
+        </p>
+
+    </div>
+
+</body>
+</html>
